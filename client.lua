@@ -1,8 +1,8 @@
 local sx,sy = guiGetScreenSize()
 local x, y = (sx/1366), (sy/768) 
 local scoreboard = false
-local font = dxCreateFont("files/font.ttf", 33)
-local font2 = dxCreateFont("files/font.ttf", 11)
+local font = dxCreateFont("img/font.ttf", 33)
+local font2 = dxCreateFont("img/font.ttf", 11)
 local scrollCache = 0
 local maxPlayersInTab = 10
 local allPlayer = 0
@@ -35,13 +35,13 @@ function DrawScoreboard()
         dxDrawRectangle(x*885, y*220, x*314, y*449, tocolor(0, 0, 0, 120), false)
         dxDrawRectangle(x*206, y*220, x*670, y*35, tocolor(0,0,0, 120), false)
         dxDrawRectangle(x*198, y*220, x*5, y*456, tocolor(0, 0, 0, 120), false)
-        dxDrawImage(x*911, y*237, x*264, y*19, ":scoreboard/img/hk_score_sever_infos.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
-        dxDrawImage(x*911, y*457, x*264, y*19, ":scoreboard/img/hk_score_second_infos.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
+        dxDrawImage(x*911, y*237, x*264, y*19, "img/hk_score_sever_infos.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
+        dxDrawImage(x*911, y*457, x*264, y*19, "img/hk_score_second_infos.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
         dxDrawImage(x*1088, y*494, x*84, y*78, ":account/img/"..getElementModel(localPlayer)..".png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
 
-        dxDrawImage(x*1086, y*491, x*89, y*82, ":scoreboard/img/hk_score_cdr.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
-        dxDrawImage(x*886, y*220, x*313, y*448, ":scoreboard/img/hk_infos_lines.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
-        dxDrawImage(x*199, y*50, x*1000, y*150, ":scoreboard/img/hk_score_head.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
+        dxDrawImage(x*1086, y*491, x*89, y*82, "img/hk_score_cdr.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
+        dxDrawImage(x*886, y*220, x*313, y*448, "img/hk_infos_lines.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
+        dxDrawImage(x*199, y*50, x*1000, y*150, "img/hk_score_head.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
 
         dxDrawText("الايدي",x* 777, y*226, x*858, y*247, tocolor(254,207,2, 255), 1.00, font2, "center", "center", false, false, false, false, false)
         dxDrawText("الاسم", x*656, y*226, x*737, y*247, tocolor(254,207,2, 255), 1.00, font2, "center", "center", false, false, false, false, false)
