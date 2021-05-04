@@ -1,0 +1,12 @@
+<meta>
+    <script src="client.lua" type="client" cache="false" />
+    <file src="img/hk_infos_lines.png" />
+    <file src="img/hk_score_cdr.png" />
+    <file src="img/hk_score_head.png" />
+    <file src="img/hk_score_line.png" />
+    <file src="img/hk_score_second_infos.png" />
+    <file src="img/hk_score_sever_infos.png" />
+    <file src="img/font.ttf"/>
+
+
+</meta>
