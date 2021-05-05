@@ -84,11 +84,11 @@ function DrawScoreboard()
         dxDrawText(""..getElementData(localPlayer,"money").." $", x*910, y*550, x*1082, y*513, tocolor(254,207,2, 255), 1.00, font2, "right", "top", false, false, false, false, false)
         dxDrawText("اسم حسابك", x*1084, y*591, x*1176, y*609, tocolor(255, 255, 255, 255), 1.00, font2, "center", "center", false, false, false, false, false)
         dxDrawText(getElementData(localPlayer,"account:username"), x*1084, y*609, x*1176,y* 627, tocolor(254,207,2, 255), 1.00, font2, "center", "center", false, false, false, false, false)
-        --dxDrawText("", x*933, y*609, x*1025, y*627, tocolor(254,207,2, 255), 1.00, font2, "center", "center", false, false, false, false, false)
-        --dxDrawText("البريد الاكتروني", x*933, y*591, x*1025, y*609, tocolor(255, 255, 255, 255), 1.00, font2, "center", "center", false, false, false, false, false)
+        dxDrawText(getElementData(localPlayer,"email"), x*933, y*609, x*1025, y*627, tocolor(254,207,2, 255), 1.00, font2, "center", "center", false, false, false, false, false)
+        dxDrawText("البريد الاكتروني", x*933, y*591, x*1025, y*609, tocolor(255, 255, 255, 255), 1.00, font2, "center", "center", false, false, false, false, false)
         if allPlayer >= 1 then 
             -- dxDrawRectangle(sx*180, scoreBarPos[2]+75+((panelHeight)/(allPlayer-maxDraw+50))*scrolling, sx*5, sy*4, tocolor(207,180,63, 255), false)
-            dxDrawRectangle(x*198, y*250-y*40/(allPlayer-maxPlayersInTab)+10*onlinePlayer, x*5, y*5, tocolor(207,180,63, 255), false)
+            dxDrawRectangle(x*198, y*205-y*40/(allPlayer-maxPlayersInTab)+10*onlinePlayer, x*5, y*5, tocolor(207,180,63, 255), false)
         end
     end
 end
