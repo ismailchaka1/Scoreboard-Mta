@@ -37,6 +37,7 @@ function DrawScoreboard()
         dxDrawRectangle(x*198, y*220, x*5, y*456, tocolor(0, 0, 0, 120), false)
         dxDrawImage(x*911, y*237, x*264, y*19, "img/hk_score_sever_infos.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
         dxDrawImage(x*911, y*457, x*264, y*19, "img/hk_score_second_infos.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
+		local skin = getElementModel(localPlayer)
         dxDrawImage(x*1088, y*494, x*84, y*78, "img/" .. ("%03d"):format(skin) .. ".png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
 
         dxDrawImage(x*1086, y*491, x*89, y*82, "img/hk_score_cdr.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
